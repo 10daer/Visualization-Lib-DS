@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bar {
+    transition: opacity 0.2s;
+  }
+  
+  .bar:hover {
+    opacity: 0.8;
+  }
+  
+  .axis {
+    font-family: var(--font-label);
+    font-size: 12px;
+  }
+  
+  .tooltip {
+    position: absolute;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    pointer-events: none;
+    font-family: var(--font-tooltip);
+    font-size: 12px;
+  }
+  

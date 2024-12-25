@@ -1,0 +1,50 @@
+ .container {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ font-family: var(--font-label);
+ }
+ .dot {
+ transition: r 0.2s ease-in-out, opacity 0.2s ease-in-out;
+ cursor: pointer;
+ }
+ .dot:hover {
+ r: 6;
+ opacity: 0.8;
+ }
+ .line {
+ fill: none;
+ stroke-width: 2;
+ transition: opacity 0.2s ease-in-out;
+ }
+ .line:hover {
+ opacity: 0.8;
+ }
+ .tooltip {
+ position: absolute;
+ padding: 8px 12px;
+ background: rgba(255, 255, 255, 0.95);
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ pointer-events: none;
+ font-size: 12px;
+ transform: translate(-50%,-100%);
+ transition: opacity 0.2s ease-in-out;
+ z-index: 10;
+ }
+ .axis {
+ font-size: 12px;
+}
+ .axis line {
+ stroke: #e5e7eb;
+ }
+ .axis path {
+ stroke: #e5e7eb;
+ }
+ .gridline {
+ stroke: #f3f4f6;
+ stroke-dasharray: 4,4;
+ stroke-width: 1;
+ }
+ 

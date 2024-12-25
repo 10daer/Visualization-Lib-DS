@@ -1,0 +1,74 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-label);
+    }
+    .segment {
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    cursor: pointer;
+    }
+    .segment:hover {
+    transform: translateX(10px) translateY(10px);
+    opacity: 0.9;
+    }
+    .label {
+    font-size: 12px;
+    fill: currentColor;
+    text-anchor: middle;
+    pointer-events: none;
+    transition: opacity 0.2s ease-out;
+    }
+    .label-line {
+    fill: none;
+   stroke: #9ca3af;
+    stroke-width: 1;
+    pointer-events: none;
+    }
+    .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 16px;
+    padding: 8px;
+    font-size: 12px;
+    }
+    .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    }
+    .legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    }
+    .tooltip {
+    position: absolute;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+    font-size: 12px;
+    transform: translate(-50%,-100%);
+    transition: opacity 0.2s ease-in-out;
+    z-index: 10;
+    }
+    .dark {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    }
+   .dark .tooltip {
+    background: rgba(31, 41, 55, 0.95);
+    border-color: #4b5563;
+    color: #f9fafb;
+    }
+    .dark .axis line,
+    .dark .axis path {
+    stroke: #4b5563;
+    }
+    .dark .gridline {
+    stroke: #374151;
+    }
