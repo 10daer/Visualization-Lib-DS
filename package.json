@@ -1,5 +1,5 @@
 {
-  "name": "advisell-data-viz",
+  "name": "a-data-viz",
   "private": true,
   "scripts": {
     "build": "turbo build",
