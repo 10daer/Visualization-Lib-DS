@@ -1,0 +1,37 @@
+:root {
+    --primary-color: #4361ee;
+    --text-color: #111827;
+    --bg-color: #ffffff;
+    --code-bg: #f9fafb;
+  }
+  
+  .app {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    min-height: 100vh;
+  }
+  
+  .navigation {
+    padding: 1rem;
+    border-right: 1px solid #e5e7eb;
+  }
+  
+  main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .gallery section {
+    margin: 2rem 0;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+  }
+  
+  pre {
+    background: var(--code-bg);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+  }
